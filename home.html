@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>GameGeeks</title>
+ 
+ </head>
+<style>
+
+* {box-sizing: border-box;}
+ body {background-image: url("https://wallpapersite.com/images/pages/pic_w/1128.jpg");
+      background-size:1400px;
+     }
+     
+.logo{
+       position: absolute;
+       margin-left:0;
+       margin-top: 0;
+       padding:0;
+       background-size:auto;}
+       
+
+     
+ul {
+    
+    left: 100px;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 100px;
+    padding:0%;
+    overflow: hidden;
+    background-color: #000000;
+    background: linear-gradient(#000000,#4d4d4d);
+    
+}
+
+input[type=text] {
+    float: right;
+    top:20px;
+    padding: 9px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 19px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: #0072CE;
+	background: linear-gradient(#0072CE,#003087);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #0072CE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #000000;
+    background: linear-gradient(#4d4d4d,#000000);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: "white"}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+
+
+
+
+  <div class="logo">
+<img src="https://lh3.googleusercontent.com/VxqA07FAaS-ZwhqRd2ilMZLc1KNBZkw97OcAzEQv6bcjZ33Cc76zEeTMwwENE_4j3E0dh8KO3beWJGJyAFdIO-1V9HfLBi5duWIAf9OtB9eQHgYY8l8Ueh5e2MZMUR-v7nf6GxvQoqDJS840NmHQwLdywS0xLC2C2LQki80ECDTzeuGXdUdfeMr0WsfJGaXz9Js83QiRuGWwgLNXKG9yzU2H4dIxLpKxlJLBWbh1-Cz_-C2o7OR79CaVGl4_CIEYn1BHOV-1vchyyi0r6SBchbzSSw8OnFJ-itvEC4RzEiMR_18dECWhqpLthmaDrzsHwKGcNnIbv94YQXnT3fenwUFUpSZ0RyrUcWD-EBQZCHoLJ5X6mzT9QoX94KU1v0kUs5T_RDBaaiq7jq3PcNjtNiAd-douwmuAn6KgUW9n_6zLjIh2Y7GvGlEncYnsKScSxECyHx0P7CHOSFwm8ATsQ1EO2tCnKsbPDkzW9c_C2xSPtGbVP-TCR9C-UjhIXyXmGXEUc7Tq_8uGe4FM3k5WU24wnE3GKybgJdZyjva0mJXQOBOpaMF1CLzrKlyxmWPRK4Qqs5bisXGyCBSPHsgb0OghauHD0z6ZqmqRQFScZNoQsZEG7qpK3O8daiOoDw8X=w1197-h673-no" width=100px height=56px> 
+</div>
+ 
+</header>
+
+<nav> 
+ 
+<ul>
+ 
+  <input type="text" placeholder="Search..">
+  <li><a href="#home">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Accesories</a>
+  </li>
+  
+  <li class="dropdown">
+   <a href="#Platforms" class="dropbtn">Platforms</a>
+   <div class="dropdown-content">
+     <a href="#">PS4</a>
+     <a href="#">XBOX ONE</a>
+     <a href="#">SWITCH</a>
+     <a href="#">PC</a>
+  <li><a href="#login page">Login</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact us">Contact us</a></li>
+   
+  
+</ul>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div style="width=35%">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://wallpapersite.com/images/pages/pic_w/1282.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://cdn.wccftech.com/wp-content/uploads/2017/09/fortnite_art.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.redditmedia.com/-dFz6fCm0egUc1diz2YwFTsqi4rOb0d50CAWZKSWVho.jpg?s=13ba8a12d136d138e80d381469b972bb" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="http://media.comicbook.com/2018/01/pubg-4-1070817.jpeg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 8 seconds
+}
+</script>
+
+
+</nav>
+
+
+
+</body>
+</html>
+
+    <a href="javascript:void(0)" class="dropbtn">Accesories</a>
